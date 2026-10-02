@@ -2,13 +2,16 @@ name: Release cartridge
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches: [main]
+    paths-ignore:
+      - '.github/**'
+      - '**.md'
   workflow_dispatch:
     inputs:
       tag:
-        description: "Existing v<version> tag to build and publish."
-        required: true
+        description: "Optional v<version> tag; leave blank to use cart.json version."
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -29,7 +32,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v7
         with:
-          ref: ${{ github.event.inputs.tag || github.ref }}
           fetch-depth: 0
 
       - name: Fetch upstream cartkit
@@ -48,16 +50,16 @@ jobs:
       - name: Check tag and cartridge identity
         id: cart
         env:
-          TAG: ${{ github.event.inputs.tag || github.ref_name }}
+          TAG: ${{ github.event.inputs.tag || '' }}
         run: |
           python3 - <<'PY' >> "$GITHUB_OUTPUT"
           import json, os
           cart = json.load(open("cart.json", encoding="utf-8"))
           version = str(cart.get("version", ""))
           cart_id = str(cart.get("id", ""))
-          tag = os.environ["TAG"]
+          tag = os.environ.get("TAG", "").strip() or f"v{version}"
           if tag != f"v{version}":
-              raise SystemExit(f"tag {tag} does not match cart version {version}")
+              raise SystemExit(f"requested tag {tag} does not match cart version {version}")
           if cart_id != os.environ["CART_ID"]:
               raise SystemExit(f"cart id {cart_id} does not match workflow id")
           print(f"version={version}")
