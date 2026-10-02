@@ -1,0 +1,99 @@
+name: Release cartridge
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing v<version> tag to build and publish."
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cartridge-release
+  cancel-in-progress: false
+
+env:
+  CART_ID: "g1r-deluxe-red-roddsoft"
+  CARTKIT_REPO: bryanthaboi/gen1recomp
+  CARTKIT_REF: dev
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.tag || github.ref }}
+          fetch-depth: 0
+
+      - name: Fetch upstream cartkit
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 3 -o "$RUNNER_TEMP/cartkit.py"             "https://raw.githubusercontent.com/${CARTKIT_REPO}/${CARTKIT_REF}/tools/cartkit.py"
+          python3 "$RUNNER_TEMP/cartkit.py" selftest --quiet
+
+      - name: Require final cart.json
+        run: |
+          test -f cart.json || {
+            echo "::error::cart.json has not been promoted yet. Publish/pin the mod releases first."
+            exit 1
+          }
+
+      - name: Check tag and cartridge identity
+        id: cart
+        env:
+          TAG: ${{ github.event.inputs.tag || github.ref_name }}
+        run: |
+          python3 - <<'PY' >> "$GITHUB_OUTPUT"
+          import json, os
+          cart = json.load(open("cart.json", encoding="utf-8"))
+          version = str(cart.get("version", ""))
+          cart_id = str(cart.get("id", ""))
+          tag = os.environ["TAG"]
+          if tag != f"v{version}":
+              raise SystemExit(f"tag {tag} does not match cart version {version}")
+          if cart_id != os.environ["CART_ID"]:
+              raise SystemExit(f"cart id {cart_id} does not match workflow id")
+          print(f"version={version}")
+          print(f"id={cart_id}")
+          print(f"tag={tag}")
+          PY
+
+      - name: Validate every pinned mod
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 "$RUNNER_TEMP/cartkit.py" validate . --online --strict
+
+      - name: Pack cartridge
+        env:
+          CART_VERSION: ${{ steps.cart.outputs.version }}
+          CART_NAME: ${{ steps.cart.outputs.id }}
+        run: |
+          set -euo pipefail
+          rm -rf dist
+          mkdir -p dist
+          python3 "$RUNNER_TEMP/cartkit.py" pack .             -o "dist/${CART_NAME}-${CART_VERSION}.g1rcart"
+          (cd dist && sha256sum ./*.g1rcart > sha256sums.txt)
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          CART_VERSION: ${{ steps.cart.outputs.version }}
+          CART_NAME: ${{ steps.cart.outputs.id }}
+          TAG: ${{ steps.cart.outputs.tag }}
+        run: |
+          set -euo pipefail
+          asset="dist/${CART_NAME}-${CART_VERSION}.g1rcart"
+          notes=$'G1R Deluxe - Red / Roddsoft Edition cartridge release.'
+          notes+=$'\n\nExisting installations can use Gen1Recomp cartridge update discovery when this release is newer than their installed version.'
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            gh release upload "$TAG" "$asset" dist/sha256sums.txt --clobber
+          else
+            gh release create "$TAG" --target "$GITHUB_SHA"               --title "$CART_VERSION" --notes "$notes"               "$asset" dist/sha256sums.txt
+          fi
