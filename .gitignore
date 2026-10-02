@@ -1,0 +1,24 @@
+# Game/ROM data — never commit
+*.gb
+*.gbc
+*.rom
+*.sav
+*.srm
+
+# Generated/imported data
+imported/
+cache/
+build/
+dist/
+out/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
