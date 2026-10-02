@@ -1,0 +1,16 @@
+return {
+  summary = "Curated Deluxe cartridge for Pokemon Red.",
+  author = "Roddsoft",
+  tags = { "red", "modpack", "deluxe", "qol" },
+  differences = {
+    changed = {},
+    added = {},
+    known = {
+      "Initial scaffold; curated mod set not yet populated.",
+    },
+  },
+  credits = {},
+  compat = {
+    modApi = 2,
+  },
+}
