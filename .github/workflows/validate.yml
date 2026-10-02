@@ -3,6 +3,14 @@ name: Validate cartridge
 on:
   push:
   pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  CARTKIT_REPO: bryanthaboi/gen1recomp
+  CARTKIT_REF: dev
 
 jobs:
   repository-policy:
@@ -20,9 +28,31 @@ jobs:
       - name: Check required cartridge files
         shell: bash
         run: |
-          test -f cartridge/manifest.lua
-          test -f cartridge/mod.card
-          test -f cartridge/loadorder.lua
+          set -euo pipefail
+          test -f cart.json
+          test -f label.png
           test -f docs/MODLIST.md
           test -f docs/COMPATIBILITY.md
           test -f docs/CREDITS.md
+      - name: Fetch upstream cartkit
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -fsSL --retry 3 -o "$RUNNER_TEMP/cartkit.py" "https://raw.githubusercontent.com/$CARTKIT_REPO/$CARTKIT_REF/tools/cartkit.py"
+          python3 "$RUNNER_TEMP/cartkit.py" selftest --quiet
+      - name: Validate cart manifest and published pins
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 "$RUNNER_TEMP/cartkit.py" validate . --online --strict
+      - name: Test cartridge packaging
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          python3 "$RUNNER_TEMP/cartkit.py" pack . -o "dist/validation.g1rcart" --online
+          test -s dist/validation.g1rcart
