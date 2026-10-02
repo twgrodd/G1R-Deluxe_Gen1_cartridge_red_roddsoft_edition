@@ -1,0 +1,28 @@
+name: Validate cartridge
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  repository-policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject obvious ROM/save files
+        shell: bash
+        run: |
+          set -euo pipefail
+          if find . -type f \( -iname '*.gb' -o -iname '*.gbc' -o -iname '*.rom' -o -iname '*.sav' -o -iname '*.srm' \) -print -quit | grep -q .; then
+            echo "ROM/save file detected. These files must not be committed."
+            exit 1
+          fi
+      - name: Check required cartridge files
+        shell: bash
+        run: |
+          test -f cartridge/manifest.lua
+          test -f cartridge/mod.card
+          test -f cartridge/loadorder.lua
+          test -f docs/MODLIST.md
+          test -f docs/COMPATIBILITY.md
+          test -f docs/CREDITS.md
