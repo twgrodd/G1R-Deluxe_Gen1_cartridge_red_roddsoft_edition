@@ -23,21 +23,45 @@ The following supplied G1R Deluxe mods have an exact filename/version match in
 Source repository:
 https://github.com/FAFF0x/gen1recomp
 
-## Not found there
+## Quality of Life
 
-These supplied mods were not found in that repository at the audited versions:
+Quality of Life 1.2.7 has a canonical GameBanana project:
 
-- Running Shoes 1.4.1
-- Quality of Life 1.2.7
-- RoddSoft Edition Start Screen 1.0.1
+- GameBanana mod ID: `699802`
+- Page: https://gamebanana.com/mods/699802
+- Cartridge source strategy: GameBanana pin rather than redistribution from this repository.
 
-The RoddSoft start-screen mod is our own project and already has its own
-repository. It should be published as a proper versioned release before it is
-pinned by the cartridge.
+The final pin still needs the exact published file ID/build metadata and MD5
+required by `cartkit`.
 
-## Release-format blocker
+## Running Shoes
 
-At the time of this audit, `FAFF0x/gen1recomp` has no GitHub Releases. The
+For v0.1.0, use Running Shoes **1.10.0**, replacing the older 1.4.1 candidate.
+
+Canonical release:
+https://github.com/MadeinTaly/gen1recomp-running-shoes/releases/tag/v1.10.0
+
+Release asset:
+`running_shoes-1.10.0.zip`
+
+Verified SHA-256:
+`d4a52154f9d6b9c81c2d7421b694beda79bd66ef45471d2b7064739a9f6ed37b`
+
+The uploaded 1.10.0 archive matches the GitHub release asset digest exactly.
+Its manifest identifies `running_shoes` version `1.10.0`, Mod API 2,
+category `TWEAK`, priority 100, and GitHub source
+`MadeinTaly/gen1recomp-running-shoes`.
+
+## RoddSoft Start Screen
+
+RoddSoft Edition Start Screen 1.0.1 is original RoddSoft work, hosted in our
+own GitHub repository and licensed under 0BSD. It is ownership/licensing
+resolved. It still needs a versioned GitHub Release asset plus SHA-256 before
+the cartridge can pin it.
+
+## Remaining release-format blocker
+
+At the time of this audit, `FAFF0x/gen1recomp` has no GitHub Releases. Its
 matched ZIPs are stored directly in the repository's `main` branch.
 
 Gen1Recomp's official custom-cart tooling expects published GitHub or
@@ -45,7 +69,6 @@ GameBanana mod builds with immutable version/hash pins. A mutable branch file
 must therefore not be treated as a final cartridge release pin.
 
 Before `cart.json` is finalized, each included third-party mod needs a
-cartkit-compatible published source (for example its canonical GitHub Release
-or GameBanana build). If FAFF0x's branch-only ZIPs are the only distribution,
-we need to determine the supported publication route rather than inventing a
-release pin.
+cartkit-compatible published source. The ten FAFF0x-hosted mods therefore
+still need their canonical release/GameBanana sources located, or another
+supported immutable publication route confirmed.
