@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "g1r-deluxe-red-roddsoft",
+  "title": "G1R Deluxe - Roddsoft Edition",
+  "version": "0.1.0",
+  "author": "Roddsoft",
+  "repo": "twgrodd/G1R-Deluxe_Gen1_cartridge_red_roddsoft_edition",
+  "summary": "Deluxe Pokemon Red cartridge with the Roddsoft mod collection.",
+  "shell": "#8b1624",
+  "finish": "holo",
+  "label": "label.png",
+  "base": "red",
+  "engine": ">=0.1.38",
+  "seal": "sealed",
+  "mods": [
+    {
+      "id": "startscreen_roddsoft",
+      "source": "github",
+      "repo": "twgrodd/G1R-Deluxe_Gen1_mod_StartScreenRoddsoft",
+      "version": "1.0.2",
+      "sha256": "b8496d261312cef03baa167d647ab232391d9ff4dc2a4ea65a53c628f74445ec"
+    },
+    {
+      "id": "move_inspector",
+      "source": "github",
+      "repo": "notquiteog/move_inspector",
+      "version": "1.0.0",
+      "sha256": "25bee1303652c77657a756a1ce03ec32efe4a43f5e6da1a362c85f29ab9028ff"
+    },
+    {
+      "id": "running_shoes",
+      "source": "github",
+      "repo": "MadeinTaly/gen1recomp-running-shoes",
+      "version": "1.10.0",
+      "sha256": "d4a52154f9d6b9c81c2d7421b694beda79bd66ef45471d2b7064739a9f6ed37b"
+    },
+    {
+      "id": "quality_of_life",
+      "source": "github",
+      "repo": "unxpected-uxp/pokemon-gen1-recomp-mod-qol",
+      "version": "1.2.7",
+      "sha256": "ee4f2eee87a146d08775ea1fe119ba31ec02a8890a96dd2a16f8309a645eeae2"
+    },
+    {
+      "id": "move_learn_stats",
+      "source": "github",
+      "repo": "notquiteog/move_learn_stats",
+      "version": "1.0.2",
+      "sha256": "5e464dfbc543632dd3d3a2bac3d1380f66d1c4cf42994b101f64a4af61fcbf28"
+    },
+    {
+      "id": "reusable_machines",
+      "source": "github",
+      "repo": "notquiteog/reusable_machines",
+      "version": "1.0.1",
+      "sha256": "84766c594d2cfb4bb4d370873cefce2b1c5886d6f1d4268158bcc49412fe9776"
+    },
+    {
+      "id": "exp_share_modes",
+      "source": "github",
+      "repo": "notquiteog/exp_share_modes",
+      "version": "1.0.0",
+      "sha256": "deb854e4c5c36ea93d6452dda1e401e92ab40cf115dff62d72dc6360d33c0e05"
+    },
+    {
+      "id": "new_game_plus",
+      "source": "github",
+      "repo": "notquiteog/new_game_plus",
+      "version": "1.0.0",
+      "sha256": "f3625bae0ea89cbd195d4f0927804afee2c6f34daa364c4c07d94662e553dc45"
+    },
+    {
+      "id": "trade_evolution_fix",
+      "source": "github",
+      "repo": "notquiteog/trade_evolution_fix",
+      "version": "1.0.0",
+      "sha256": "d0044d020f26bca9d5a80741225bd6928fc7c705f23c31338dc1fded5d2ce9e5"
+    },
+    {
+      "id": "moves_manager",
+      "source": "github",
+      "repo": "notquiteog/moves_manager",
+      "version": "1.0.1",
+      "sha256": "918cd1f4974818583e1c8117b38cf1504fe187b5da5ccc4abb58c6ef9c7cf764"
+    },
+    {
+      "id": "modern_bag",
+      "source": "github",
+      "repo": "notquiteog/modern_bag",
+      "version": "1.6.0",
+      "sha256": "e3636bb9d2f5dd5cd4f6985748d08e94b0fd92330aa2327550fe361f0eb6fd16"
+    },
+    {
+      "id": "pokedex_plus",
+      "source": "github",
+      "repo": "notquiteog/pokedex_plus",
+      "version": "1.3.4",
+      "sha256": "00a040bad3da328309f61439c08b0abdc5c81b79d8090f9ca09b4d9a8c32115c"
+    },
+    {
+      "id": "hm_anywhere",
+      "source": "github",
+      "repo": "notquiteog/hm_anywhere",
+      "version": "1.2.0",
+      "sha256": "ecc76b2d5ec73cfa7d39b32f536e62ac5b824ee1a85d91beafd74c97058c1d4e"
+    }
+  ],
+  "load_order": [
+    "startscreen_roddsoft",
+    "move_inspector",
+    "running_shoes",
+    "quality_of_life",
+    "move_learn_stats",
+    "reusable_machines",
+    "exp_share_modes",
+    "new_game_plus",
+    "trade_evolution_fix",
+    "moves_manager",
+    "modern_bag",
+    "pokedex_plus",
+    "hm_anywhere"
+  ]
+}
