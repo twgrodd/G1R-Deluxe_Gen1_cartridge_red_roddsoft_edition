@@ -54,10 +54,19 @@ category `TWEAK`, priority 100, and GitHub source
 
 ## RoddSoft Start Screen
 
-RoddSoft Edition Start Screen 1.0.1 is original RoddSoft work, hosted in our
-own GitHub repository and licensed under 0BSD. It is ownership/licensing
-resolved. It still needs a versioned GitHub Release asset plus SHA-256 before
-the cartridge can pin it.
+RoddSoft Edition Start Screen is original RoddSoft work and is now published
+as a proper GitHub Release at **v1.0.2**.
+
+Canonical release:
+https://github.com/twgrodd/G1R-Deluxe_Gen1_mod_StartScreenRoddsoft/releases/tag/v1.0.2
+
+Release asset:
+`startscreen_roddsoft-1.0.2.zip`
+
+Verified SHA-256:
+`b8496d261312cef03baa167d647ab232391d9ff4dc2a4ea65a53c628f74445ec`
+
+This replaces the earlier 1.0.1 cartridge candidate.
 
 ## Remaining release-format blocker
 
