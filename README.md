@@ -35,3 +35,4 @@ This repository is an independent fan project and is not affiliated with Nintend
 ## Legal / content policy
 
 Do not commit Pokémon Red ROM files, extracted proprietary assets, or ROM-derived bytes. Users must provide any required legally obtained game data themselves.
+
