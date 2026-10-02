@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "id": "g1r-deluxe-red-roddsoft",
+  "title": "G1R Deluxe - Roddsoft Edition",
+  "version": "0.1.0",
+  "author": "Roddsoft",
+  "repo": "twgrodd/G1R-Deluxe_Gen1_cartridge_red_roddsoft_edition",
+  "summary": "Deluxe Pokemon Red cartridge with the Roddsoft mod collection.",
+  "shell": "#8b1624",
+  "finish": "holo",
+  "label": "label.png",
+  "base": "red",
+  "seal": "sealed"
+}
