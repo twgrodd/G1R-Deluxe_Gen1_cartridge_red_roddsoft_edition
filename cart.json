@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "g1r-deluxe-red-roddsoft",
   "title": "G1R Deluxe - Roddsoft Edition",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": "Roddsoft",
   "repo": "twgrodd/G1R-Deluxe_Gen1_cartridge_red_roddsoft_edition",
   "summary": "Deluxe Pokemon Red cartridge with the Roddsoft mod collection.",
@@ -32,14 +32,23 @@
       "source": "github",
       "repo": "MadeinTaly/gen1recomp-running-shoes",
       "version": "1.10.0",
-      "sha256": "d4a52154f9d6b9c81c2d7421b694beda79bd66ef45471d2b7064739a9f6ed37b"
+      "sha256": "d4a52154f9d6b9c81c2d7421b694beda79bd66ef45471d2b7064739a9f6ed37b",
+      "options": {
+        "speed": "1.5",
+        "fx": "off"
+      }
     },
     {
       "id": "quality_of_life",
       "source": "github",
       "repo": "unxpected-uxp/pokemon-gen1-recomp-mod-qol",
       "version": "1.2.7",
-      "sha256": "ee4f2eee87a146d08775ea1fe119ba31ec02a8890a96dd2a16f8309a645eeae2"
+      "sha256": "ee4f2eee87a146d08775ea1fe119ba31ec02a8890a96dd2a16f8309a645eeae2",
+      "options": {
+        "qol_exp_bar": "on",
+        "qol_location_banners": 2,
+        "qol_easy_interactions": false
+      }
     },
     {
       "id": "move_learn_stats",
@@ -60,7 +69,10 @@
       "source": "github",
       "repo": "notquiteog/exp_share_modes",
       "version": "1.0.0",
-      "sha256": "deb854e4c5c36ea93d6452dda1e401e92ab40cf115dff62d72dc6360d33c0e05"
+      "sha256": "deb854e4c5c36ea93d6452dda1e401e92ab40cf115dff62d72dc6360d33c0e05",
+      "options": {
+        "mode": "modern"
+      }
     },
     {
       "id": "new_game_plus",
@@ -88,7 +100,10 @@
       "source": "github",
       "repo": "notquiteog/modern_bag",
       "version": "1.6.0",
-      "sha256": "e3636bb9d2f5dd5cd4f6985748d08e94b0fd92330aa2327550fe361f0eb6fd16"
+      "sha256": "e3636bb9d2f5dd5cd4f6985748d08e94b0fd92330aa2327550fe361f0eb6fd16",
+      "options": {
+        "opening_pocket": "last"
+      }
     },
     {
       "id": "pokedex_plus",
@@ -109,7 +124,13 @@
       "source": "github",
       "repo": "scottcandy34/DramaticShapeVoxelMod-latest",
       "version": "1.9.0",
-      "sha256": "3d997c9ec87e4543df3ba6a07c29c05e6dd95cbaf613558ffee21012adac0635"
+      "sha256": "3d997c9ec87e4543df3ba6a07c29c05e6dd95cbaf613558ffee21012adac0635",
+      "options": {
+        "shinyOdds": 128,
+        "water": "off",
+        "battleBack": false,
+        "shadows": false
+      }
     }
   ],
   "load_order": [
