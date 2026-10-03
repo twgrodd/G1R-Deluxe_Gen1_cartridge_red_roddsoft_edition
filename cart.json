@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "g1r-deluxe-red-roddsoft",
   "title": "G1R Deluxe - Roddsoft Edition",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Roddsoft",
   "repo": "twgrodd/G1R-Deluxe_Gen1_cartridge_red_roddsoft_edition",
   "summary": "Deluxe Pokemon Red cartridge with the Roddsoft mod collection.",
@@ -103,6 +103,13 @@
       "repo": "notquiteog/hm_anywhere",
       "version": "1.2.0",
       "sha256": "ecc76b2d5ec73cfa7d39b32f536e62ac5b824ee1a85d91beafd74c97058c1d4e"
+    },
+    {
+      "id": "DRAMATIC_SHAPE",
+      "source": "github",
+      "repo": "scottcandy34/DramaticShapeVoxelMod-latest",
+      "version": "1.9.0",
+      "sha256": "d598d1363e72ef4f288f9ce9ba1d0d31321764e11bbd9274efaf107c979107fd"
     }
   ],
   "load_order": [
@@ -118,7 +125,7 @@
     "moves_manager",
     "modern_bag",
     "pokedex_plus",
-    "hm_anywhere"
+    "hm_anywhere",
+    "DRAMATIC_SHAPE"
   ]
 }
-
