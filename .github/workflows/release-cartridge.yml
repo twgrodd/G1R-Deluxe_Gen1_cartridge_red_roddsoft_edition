@@ -34,6 +34,26 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Prepare launcher-compatible label
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet Pillow
+          python3 - <<'PY'
+          from PIL import Image
+          import os
+          p = "label.png"
+          with Image.open(p) as src:
+              img = src.convert("RGB")
+              if img.size != (512, 512):
+                  img = img.resize((512, 512), Image.Resampling.LANCZOS)
+              img.save(p, format="PNG", optimize=True, compress_level=9)
+          with Image.open(p) as img:
+              assert img.format == "PNG"
+              assert img.mode == "RGB"
+              assert img.size == (512, 512)
+          assert os.path.getsize(p) < 256 * 1024
+          PY
+
       - name: Fetch upstream cartkit
         run: |
           set -euo pipefail
@@ -93,6 +113,7 @@ jobs:
           set -euo pipefail
           asset="dist/${CART_NAME}-${CART_VERSION}.g1rcart"
           notes=$'G1R Deluxe - Red / Roddsoft Edition cartridge release.'
+          notes+=$'\n\nLabel art is normalized to a 512x512 true-color RGB PNG before packing for launcher compatibility.'
           notes+=$'\n\nExisting installations can use Gen1Recomp cartridge update discovery when this release is newer than their installed version.'
           if gh release view "$TAG" >/dev/null 2>&1; then
             gh release upload "$TAG" "$asset" dist/sha256sums.txt --clobber
