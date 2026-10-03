@@ -34,6 +34,29 @@ jobs:
           test -f docs/MODLIST.md
           test -f docs/COMPATIBILITY.md
           test -f docs/CREDITS.md
+      - name: Prepare launcher-compatible label
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet Pillow
+          python3 - <<'PY'
+          from PIL import Image
+          p = "label.png"
+          with Image.open(p) as src:
+              img = src.convert("RGB")
+              if img.size != (512, 512):
+                  img = img.resize((512, 512), Image.Resampling.LANCZOS)
+              img.save(p, format="PNG", optimize=True, compress_level=9)
+          PY
+          python3 - <<'PY'
+          from PIL import Image
+          import os
+          with Image.open("label.png") as img:
+              assert img.format == "PNG"
+              assert img.mode == "RGB"
+              assert img.size == (512, 512)
+          assert os.path.getsize("label.png") < 256 * 1024
+          PY
       - name: Fetch upstream cartkit
         shell: bash
         run: |
