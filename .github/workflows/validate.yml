@@ -40,7 +40,8 @@ jobs:
           set -euo pipefail
           python3 -m pip install --quiet Pillow
           python3 - <<'PY'
-          from PIL import Image
+          from PIL import Image, ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
           p = "label.png"
           with Image.open(p) as src:
               img = src.convert("RGB")
