@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "g1r-deluxe-red-roddsoft",
   "title": "G1R Deluxe - Roddsoft Edition",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "author": "Roddsoft",
   "repo": "twgrodd/G1R-Deluxe_Gen1_cartridge_red_roddsoft_edition",
   "summary": "Deluxe Pokemon Red cartridge with the Roddsoft mod collection.",
@@ -84,9 +84,9 @@
     {
       "id": "all_pokemon_catchable_151_mod",
       "source": "github",
-      "repo": "wowabox/All_Pokemon_Catchable_151_Mod",
-      "version": "0.3.3-beta - Yellow Support Hotfix",
-      "sha256": "4239ab5b3e6867d86fbd257eec716b817eb67c2c39ae9286b79a7acd1402223d"
+      "repo": "twgrodd/G1R-Deluxe_Gen1_mod_fork_All_Pokemon_Catchable",
+      "version": "0.3.3",
+      "sha256": "90a86f13040363b2139a6baea9ec0b81810d9a0b37e26990d8b5b2bc9a7d9c21"
     },
     {
       "id": "moves_manager",
