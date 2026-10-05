@@ -89,6 +89,13 @@
       "sha256": "90a86f13040363b2139a6baea9ec0b81810d9a0b37e26990d8b5b2bc9a7d9c21"
     },
     {
+      "id": "trainer_rematch",
+      "source": "github",
+      "repo": "twgrodd/G1R-Deluxe_Gen1_mod_fork_trainer-Rematch-Roddsoftver",
+      "version": "0.5.4",
+      "sha256": "88586130259fd90a3e774bc80c0b22362aaef900ed6c36f60aff84669dcd062f"
+    },
+    {
       "id": "moves_manager",
       "source": "github",
       "repo": "notquiteog/moves_manager",
@@ -150,6 +157,7 @@
     "exp_share_modes",
     "new_game_plus",
     "all_pokemon_catchable_151_mod",
+    "trainer_rematch",
     "moves_manager",
     "modern_bag",
     "pokedex_plus",
