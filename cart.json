@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "g1r-deluxe-red-roddsoft",
   "title": "G1R Deluxe - Roddsoft Edition",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "author": "Roddsoft",
   "repo": "twgrodd/G1R-Deluxe_Gen1_cartridge_red_roddsoft_edition",
   "summary": "Deluxe Pokemon Red cartridge with the Roddsoft mod collection.",
@@ -65,14 +65,11 @@
       "sha256": "84766c594d2cfb4bb4d370873cefce2b1c5886d6f1d4268158bcc49412fe9776"
     },
     {
-      "id": "exp_share_modes",
+      "id": "exp_share",
       "source": "github",
-      "repo": "notquiteog/exp_share_modes",
-      "version": "1.0.0",
-      "sha256": "deb854e4c5c36ea93d6452dda1e401e92ab40cf115dff62d72dc6360d33c0e05",
-      "options": {
-        "mode": "modern"
-      }
+      "repo": "ShaneMcGovernIE/exp_share",
+      "version": "0.1.10",
+      "sha256": "7a22e8d143b27b857773db350d969f3f5b31f0e2c813cd82d4181ef2c3d85f86"
     },
     {
       "id": "new_game_plus",
@@ -154,7 +151,7 @@
     "quality_of_life",
     "move_learn_stats",
     "reusable_machines",
-    "exp_share_modes",
+    "exp_share",
     "new_game_plus",
     "all_pokemon_catchable_151_mod",
     "trainer_rematch",
