@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "g1r-deluxe-red-roddsoft",
   "title": "G1R Deluxe - Roddsoft Edition",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "author": "Roddsoft",
   "repo": "twgrodd/G1R-Deluxe_Gen1_cartridge_red_roddsoft_edition",
   "summary": "Deluxe Pokemon Red cartridge with the Roddsoft mod collection.",
@@ -111,8 +111,8 @@
       "id": "modern_bag",
       "source": "github",
       "repo": "twgrodd/G1R-Deluxe_Gen1_mod_fork_Modern-Bag-Roddsoftver",
-      "version": "1.6.4",
-      "sha256": "3e740c7ee48f28546274e4b38fcb5c18cbab84839abdc2de8b65975ea325a247",
+      "version": "1.6.6",
+      "sha256": "d165a24237152c79f24e92e1a55fb2e97348675fb2146f54395b9db4502d62f8",
       "options": {
         "opening_pocket": "last"
       }
