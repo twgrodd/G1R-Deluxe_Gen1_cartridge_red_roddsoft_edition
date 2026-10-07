@@ -146,3 +146,11 @@ Existing QoL defaults such as the EXP bar and location banners were preserved.
 ---
 
 Release dates and published-version state above are based on the repository's GitHub release history. Entries for v0.2.3 and v0.2.8 are retained because they were meaningful development attempts even though they were not published releases.
+
+## v0.2.17 (2026-10-07)
+
+- Added **Modern PC UI 0.6.3** (`piftee/gen1recomp-modern-pc-ui`).
+- Modern PC UI replaces the classic PC flow with a combined party-and-box workspace featuring direct pickup, placement, swapping, quick transfers, box browsing, selected-Pokémon details, and adaptive layouts.
+- The mod has optional compatibility hooks for both **Dramatic Shape** and **Crystal Animated Sprites with Shiny Visuals**, which are already part of this cartridge.
+- Note: upstream marks the standalone Modern PC UI as superseded by its Modern UI Suite, but v0.6.3 remains available for existing standalone installs and is the version intentionally pinned here.
+
