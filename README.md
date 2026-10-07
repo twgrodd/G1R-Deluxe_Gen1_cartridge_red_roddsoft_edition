@@ -5,7 +5,7 @@ Basically adding Quality of life improvements from newer games to the classic wi
 
 ## Status
 
-**Current cartridge: v0.2.16** — sealed and release-ready, targeting Gen1Recomp `>=0.1.38`.
+**Current cartridge: v0.2.17** — sealed and release-ready, targeting Gen1Recomp `>=0.1.38`.
 
 The cartridge uses a dark-red `#8b1624` shell, holo finish, and the custom Roddsoft label.
 
@@ -23,10 +23,11 @@ The cartridge uses a dark-red `#8b1624` shell, holo finish, and the custom Rodds
 10. Trainer Rematch Roddsoft 0.5.4
 11. Moves Manager 1.0.1
 12. Modern Bag Roddsoft 1.6.6
-13. Pokédex Plus 1.3.4
-14. HM Anywhere 1.2.0
-15. Crystal Animated Sprites with Shiny Visuals 2.0.3
-16. Dramatic Shape 1.9.0
+13. Modern PC UI 0.6.3
+14. Pokédex Plus 1.3.4
+15. HM Anywhere 1.2.0
+16. Crystal Animated Sprites with Shiny Visuals 2.0.3
+17. Dramatic Shape 1.9.0
 
 ## Curated defaults
 
