@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "g1r-deluxe-red-roddsoft",
   "title": "G1R Deluxe - Roddsoft Edition",
-  "version": "0.2.16",
+  "version": "0.2.17",
   "author": "Roddsoft",
   "repo": "twgrodd/G1R-Deluxe_Gen1_cartridge_red_roddsoft_edition",
   "summary": "Deluxe Pokemon Red cartridge with the Roddsoft mod collection.",
@@ -119,6 +119,13 @@
       }
     },
     {
+      "id": "modern_pc_ui",
+      "source": "github",
+      "repo": "piftee/gen1recomp-modern-pc-ui",
+      "version": "0.6.3",
+      "sha256": "0aef30a507e46684c62d83bcfebd9df8c334d7558cda925c2a93e64326fe7f89"
+    },
+    {
       "id": "pokedex_plus",
       "source": "github",
       "repo": "notquiteog/pokedex_plus",
@@ -166,6 +173,7 @@
     "trainer_rematch",
     "moves_manager",
     "modern_bag",
+    "modern_pc_ui",
     "pokedex_plus",
     "hm_anywhere",
     "crystal_animated_sprites_with_shiny_visuals",
