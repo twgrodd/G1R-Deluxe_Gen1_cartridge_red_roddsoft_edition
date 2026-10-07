@@ -31,12 +31,12 @@ At this stage the cartridge pinned the mods and load order but did not yet defin
 
 ## v0.2.0 (2026-10-03)
 
-- Added **Dramatic Shape 1.9.0**.
+- Added the mod **Dramatic Shape 1.9.0**.
 - Expanded the cartridge from 13 to 14 mods.
 
 ## v0.2.1 (2026-10-03)
 
-Added the first curated per-mod defaults:
+Added the first curated per-mod default settings:
 
 - Running Shoes: speed `1.5`, FX off.
 - Quality of Life: EXP bar on, location banners `2`, Easy Interactions off.
@@ -47,7 +47,6 @@ Added the first curated per-mod defaults:
 ## v0.2.2 (2026-10-03)
 
 - Updated/upgraded the custom cartridge label presentation.
-- Gameplay mod lineup and configured mod options remained unchanged.
 
 ## v0.2.3 (attempted, not published)
 
@@ -66,13 +65,13 @@ Added the first curated per-mod defaults:
 
 ## v0.2.6 (2026-10-03)
 
-- Added **Crystal Animated Sprites with Shiny Visuals 2.1.0**.
+- Added the mod **Crystal Animated Sprites with Shiny Visuals 2.1.0**.
 - Expanded the cartridge to 15 mods.
 
 ## v0.2.7 (2026-10-04)
 
-- Removed **Trade Evolution Fix 1.0.0**.
-- Added **All Pokémon Catchable 151 Mod 0.3.3** from the original upstream repository.
+- Removed mod **Trade Evolution Fix 1.0.0**.
+- Added mod **All Pokémon Catchable 151 Mod 0.3.3** from the original upstream repository.
 - This gave the cartridge a broader all-151-without-trading solution, including replacements for the trade evolutions.
 - The upstream release later proved unsuitable for a sealed cartridge because its internal manifest version did not exactly match the semver cartridge pin.
 
@@ -92,21 +91,21 @@ Added the first curated per-mod defaults:
 
 ## v0.2.10 (2026-10-05)
 
-- Added **Trainer Rematch Roddsoft 0.5.4**.
-- Switched **Modern Bag** from the original repository to the Roddsoft fork, initially pinned at v1.6.0.
-- Repaired the unavailable Crystal Animated Sprites pin by moving from the vanished `notquiteog` repository/version 2.1.0 to the available `distilledorion-sketch` repository at v2.0.3.
+- Added mod **Trainer Rematch Roddsoft 0.5.4**.
+- Switched mod **Modern Bag** from the original repository to the Roddsoft fork, initially pinned at v1.6.0.
+- Repaired the unavailable mod Crystal Animated Sprites pin by moving from the vanished `notquiteog` repository/version 2.1.0 to the available `distilledorion-sketch` repository at v2.0.3.
 - Strict online cartridge validation passed with the repaired release pins.
 
 ## v0.2.11 (2026-10-05)
 
-- Updated the Roddsoft Modern Bag fork from v1.6.0 to **v1.6.4**.
+- Updated the mod Roddsoft Modern Bag fork from v1.6.0 to **v1.6.4**.
 - The fork's internal manifest was corrected to report v1.6.4 so the sealed cartridge and installed mod version agree.
 - Preserved Modern Bag's `opening_pocket: last` default.
 
 ## v0.2.12 (2026-10-05)
 
-- Removed **EXP Share Modes 1.0.0**.
-- Added **Exp Share 0.1.10** (`ShaneMcGovernIE/exp_share`).
+- Removed mod **EXP Share Modes 1.0.0**.
+- Added mod **Exp Share 0.1.10** (`ShaneMcGovernIE/exp_share`).
 - The replacement provides OFF, Gen 1, Gen 5+, Balanced, Average, and Custom EXP-sharing modes plus single-slot and percentage controls.
 
 ## v0.2.13 (2026-10-05)
@@ -128,7 +127,7 @@ Existing QoL defaults such as the EXP bar and location banners were preserved.
 
 ## v0.2.14 (2026-10-05)
 
-- Updated **Modern Bag Roddsoft 1.6.4 → 1.6.6**.
+- Updated mod **Modern Bag Roddsoft 1.6.4 → 1.6.6**.
 - Verified the v1.6.6 release's internal manifest also reports v1.6.6.
 - Preserved the existing Modern Bag default settings.
 
