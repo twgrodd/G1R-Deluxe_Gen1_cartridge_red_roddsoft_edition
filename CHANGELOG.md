@@ -143,36 +143,6 @@ Existing QoL defaults such as the EXP bar and location banners were preserved.
 - **Important:** Voxel is an engine/display setting, not a Dramatic Shape per-mod option exposed by the current official cartridge authoring schema. Therefore Voxel 0 is an intended external Gen1Recomp setting and is **not encoded in `cart.json` or the `.g1rcart`**.
 - No gameplay mod pins or cartridge-encodable options changed from v0.2.15.
 
-## Current cartridge state (v0.2.16)
-
-The current sealed cartridge contains 16 mods:
-
-1. Start Screen Roddsoft 1.0.2
-2. Move Inspector 1.0.0
-3. Running Shoes 1.10.0
-4. Quality of Life 1.2.7
-5. Move Learn Stats 1.0.2
-6. Reusable Machines 1.0.1
-7. Exp Share 0.1.10
-8. New Game Plus 1.0.0
-9. All Pokémon Catchable 151 Mod — Roddsoft-compatible fork 0.3.3
-10. Trainer Rematch Roddsoft 0.5.4
-11. Moves Manager 1.0.1
-12. Modern Bag Roddsoft 1.6.6
-13. Pokédex Plus 1.3.4
-14. HM Anywhere 1.2.0
-15. Crystal Animated Sprites with Shiny Visuals 2.0.3
-16. Dramatic Shape 1.9.0
-
-### Current curated defaults
-
-- Running Shoes: speed 1.5, FX off.
-- Quality of Life: EXP bar on, location banners 2, Easy Interactions on, Water Interaction Surf First, Repel Prompt on, Pokédex Indicator ON (Gen2).
-- Exp Share: Custom, Percent Slot All, Percent 10%, Single EXP Share All.
-- Modern Bag Roddsoft: opening pocket last.
-- Dramatic Shape: shiny odds 128, water off, battle back off, shadows off.
-- Desired external Gen1Recomp display settings: Voxel 0 and TiltShift off (not currently cartridge-encodable).
-
 ---
 
 Release dates and published-version state above are based on the repository's GitHub release history. Entries for v0.2.3 and v0.2.8 are retained because they were meaningful development attempts even though they were not published releases.
