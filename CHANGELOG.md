@@ -154,3 +154,12 @@ Release dates and published-version state above are based on the repository's Gi
 - The mod has optional compatibility hooks for both **Dramatic Shape** and **Crystal Animated Sprites with Shiny Visuals**, which are already part of this cartridge.
 - Note: upstream marks the standalone Modern PC UI as superseded by its Modern UI Suite, but v0.6.3 remains available for existing standalone installs and is the version intentionally pinned here.
 
+## v0.2.18 (2026-10-10)
+
+- Updated **RoddSoft Edition Title Screen** 1.0.2 → **1.1.1**, adopting the new manifest ID `RoddSoft-Edition-Title-Screen`. Its manifest now declares `games: ["gen1"]` and preserves each game's title composition.
+- Replaced upstream **New Game Plus 1.0.0** with **New Game Plus Roddsoft 1.0.13** (`twgrodd/G1R-Deluxe_Gen1_mod_fork_new-game-plus-Roddsoftver`), manifest ID `new-game-plus-roddsoft`.
+- Updated **All Pokémon Catchable** Roddsoft fork 0.3.3 → **0.4.5**, adopting the new manifest ID `all_pokemon_catchable_roddsoft` and name **All Pokémon Catchable Roddsoft**.
+- Updated **Trainer Rematch RoddSoft** 0.5.4 → **0.5.24**, adopting the new manifest ID `trainer-rematch-roddsoft`. Its release workflow normalizes the packaged manifest version to the release tag; the tagged repository source still lists 0.5.22.
+- Updated **Modern Bag Roddsoft** 1.6.6 → **1.6.13**, adopting the new manifest ID `modern_bag_roddsoft` and preserving `opening_pocket: last`.
+- Updated the cartridge's `load_order` to match all five renamed IDs; kept the other 12 mod pins and existing curated options unchanged.
+
