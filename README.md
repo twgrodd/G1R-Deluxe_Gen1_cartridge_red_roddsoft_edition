@@ -5,24 +5,24 @@ Basically adding Quality of life improvements from newer games to the classic wi
 
 ## Status
 
-**Current cartridge: v0.2.17** — sealed and release-ready, targeting Gen1Recomp `>=0.1.38`.
+**Current cartridge: v0.2.18** — sealed and release-ready, targeting Gen1Recomp `>=0.1.38`.
 
 The cartridge uses a dark-red `#8b1624` shell, holo finish, and the custom Roddsoft label.
 
 ## Current mod lineup
 
-1. Start Screen Roddsoft 1.0.2
+1. RoddSoft Edition Title Screen 1.1.1
 2. Move Inspector 1.0.0
 3. Running Shoes 1.10.0
 4. Quality of Life 1.2.7
 5. Move Learn Stats 1.0.2
 6. Reusable Machines 1.0.1
 7. Exp Share 0.1.10
-8. New Game Plus 1.0.0
-9. All Pokémon Catchable 151 Mod — Roddsoft-compatible fork 0.3.3
-10. Trainer Rematch Roddsoft 0.5.4
+8. New Game Plus Roddsoft 1.0.13
+9. All Pokémon Catchable Roddsoft 0.4.5
+10. Trainer Rematch RoddSoft 0.5.24
 11. Moves Manager 1.0.1
-12. Modern Bag Roddsoft 1.6.6
+12. Modern Bag Roddsoft 1.6.13
 13. Modern PC UI 0.6.3
 14. Pokédex Plus 1.3.4
 15. HM Anywhere 1.2.0
