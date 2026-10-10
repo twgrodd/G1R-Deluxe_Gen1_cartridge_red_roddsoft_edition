@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "g1r-deluxe-red-roddsoft",
   "title": "G1R Deluxe - Roddsoft Edition",
-  "version": "0.2.17",
+  "version": "0.2.18",
   "author": "Roddsoft",
   "repo": "twgrodd/G1R-Deluxe_Gen1_cartridge_red_roddsoft_edition",
   "summary": "Deluxe Pokemon Red cartridge with the Roddsoft mod collection.",
@@ -14,11 +14,11 @@
   "seal": "sealed",
   "mods": [
     {
-      "id": "startscreen_roddsoft",
+      "id": "RoddSoft-Edition-Title-Screen",
       "source": "github",
       "repo": "twgrodd/G1R-Deluxe_Gen1_mod_StartScreenRoddsoft",
-      "version": "1.0.2",
-      "sha256": "b8496d261312cef03baa167d647ab232391d9ff4dc2a4ea65a53c628f74445ec"
+      "version": "1.1.1",
+      "sha256": "9e97bc57b5afe17469054cda83b9bdcde3b9f7b84e6b6b36f266e3bfe2cd8b68"
     },
     {
       "id": "move_inspector",
@@ -81,25 +81,25 @@
       }
     },
     {
-      "id": "new_game_plus",
+      "id": "new-game-plus-roddsoft",
       "source": "github",
-      "repo": "notquiteog/new_game_plus",
-      "version": "1.0.0",
-      "sha256": "f3625bae0ea89cbd195d4f0927804afee2c6f34daa364c4c07d94662e553dc45"
+      "repo": "twgrodd/G1R-Deluxe_Gen1_mod_fork_new-game-plus-Roddsoftver",
+      "version": "1.0.13",
+      "sha256": "6560ad977edbca1aa44c2fdda0d355ee83a14e8a6e2be63941c857fd9478ee62"
     },
     {
-      "id": "all_pokemon_catchable_151_mod",
+      "id": "all_pokemon_catchable_roddsoft",
       "source": "github",
       "repo": "twgrodd/G1R-Deluxe_Gen1_mod_fork_All_Pokemon_Catchable",
-      "version": "0.3.3",
-      "sha256": "90a86f13040363b2139a6baea9ec0b81810d9a0b37e26990d8b5b2bc9a7d9c21"
+      "version": "0.4.5",
+      "sha256": "c520ff1dae37236b80a0da820c9571a2d426410fcb7aa05d3eaf943cc7aa985c"
     },
     {
-      "id": "trainer_rematch",
+      "id": "trainer-rematch-roddsoft",
       "source": "github",
       "repo": "twgrodd/G1R-Deluxe_Gen1_mod_fork_trainer-Rematch-Roddsoftver",
-      "version": "0.5.4",
-      "sha256": "88586130259fd90a3e774bc80c0b22362aaef900ed6c36f60aff84669dcd062f"
+      "version": "0.5.24",
+      "sha256": "1583de8f77fadf24c9292687069a9bdb5f7ad2171798cfbb490c53f4235d8474"
     },
     {
       "id": "moves_manager",
@@ -109,11 +109,11 @@
       "sha256": "918cd1f4974818583e1c8117b38cf1504fe187b5da5ccc4abb58c6ef9c7cf764"
     },
     {
-      "id": "modern_bag",
+      "id": "modern_bag_roddsoft",
       "source": "github",
       "repo": "twgrodd/G1R-Deluxe_Gen1_mod_fork_Modern-Bag-Roddsoftver",
-      "version": "1.6.6",
-      "sha256": "d165a24237152c79f24e92e1a55fb2e97348675fb2146f54395b9db4502d62f8",
+      "version": "1.6.13",
+      "sha256": "22ab8853ee5535c494d511851d59f9f6e10f1a0279d4ed4c0105168f630bbb89",
       "options": {
         "opening_pocket": "last"
       }
@@ -161,18 +161,18 @@
     }
   ],
   "load_order": [
-    "startscreen_roddsoft",
+    "RoddSoft-Edition-Title-Screen",
     "move_inspector",
     "running_shoes",
     "quality_of_life",
     "move_learn_stats",
     "reusable_machines",
     "exp_share",
-    "new_game_plus",
-    "all_pokemon_catchable_151_mod",
-    "trainer_rematch",
+    "new-game-plus-roddsoft",
+    "all_pokemon_catchable_roddsoft",
+    "trainer-rematch-roddsoft",
     "moves_manager",
-    "modern_bag",
+    "modern_bag_roddsoft",
     "modern_pc_ui",
     "pokedex_plus",
     "hm_anywhere",
