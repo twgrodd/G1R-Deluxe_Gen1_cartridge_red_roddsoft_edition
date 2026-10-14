@@ -5,7 +5,7 @@ Basically adding Quality of life improvements from newer games to the classic wi
 
 ## Status
 
-**Current cartridge: v0.2.18** — sealed and release-ready, targeting Gen1Recomp `>=0.1.38`.
+**Current cartridge: v0.2.19** — sealed and release-ready, targeting Gen1Recomp `>=0.1.38`.
 
 The cartridge uses a dark-red `#8b1624` shell, holo finish, and the custom Roddsoft label.
 
@@ -14,20 +14,20 @@ The cartridge uses a dark-red `#8b1624` shell, holo finish, and the custom Rodds
 1. RoddSoft Edition Title Screen 1.1.1
 2. Move Inspector 1.0.0
 3. Running Shoes 1.10.0
-4. Quality of Life 1.2.7
+4. Quality of Life 1.3.0
 5. Move Learn Stats 1.0.2
 6. Reusable Machines 1.0.1
 7. Exp Share 0.1.10
-8. New Game Plus Roddsoft 1.0.13
+8. New Game Plus Roddsoft 1.0.16
 9. All Pokémon Catchable Roddsoft 0.4.5
-10. Trainer Rematch RoddSoft 0.5.24
+10. Trainer Rematch RoddSoft 0.5.25
 11. Moves Manager 1.0.1
 12. Modern Bag Roddsoft 1.6.13
 13. Modern PC UI 0.6.3
 14. Pokédex Plus 1.3.4
 15. HM Anywhere 1.2.0
 16. Crystal Animated Sprites with Shiny Visuals 2.0.3
-17. Dramatic Shape 1.9.0
+17. Dramatic Shape 1.9.2
 
 ## Curated defaults
 
