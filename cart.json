@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "g1r-deluxe-red-roddsoft",
   "title": "G1R Deluxe - Roddsoft Edition",
-  "version": "0.2.18",
+  "version": "0.2.19",
   "author": "Roddsoft",
   "repo": "twgrodd/G1R-Deluxe_Gen1_cartridge_red_roddsoft_edition",
   "summary": "Deluxe Pokemon Red cartridge with the Roddsoft mod collection.",
@@ -42,8 +42,8 @@
       "id": "quality_of_life",
       "source": "github",
       "repo": "unxpected-uxp/pokemon-gen1-recomp-mod-qol",
-      "version": "1.2.7",
-      "sha256": "ee4f2eee87a146d08775ea1fe119ba31ec02a8890a96dd2a16f8309a645eeae2",
+      "version": "1.3.0",
+      "sha256": "adafefb6874fd4c9de97219fa1b047e287cc0ecf70ecaaa1164d39516ac247c4",
       "options": {
         "qol_exp_bar": "on",
         "qol_location_banners": 2,
@@ -70,7 +70,7 @@
     {
       "id": "exp_share",
       "source": "github",
-      "repo": "ShaneMcGovernIE/exp_share",
+      "repo": "Nexhas28/exp_share",
       "version": "0.1.10",
       "sha256": "7a22e8d143b27b857773db350d969f3f5b31f0e2c813cd82d4181ef2c3d85f86",
       "options": {
@@ -84,8 +84,8 @@
       "id": "new-game-plus-roddsoft",
       "source": "github",
       "repo": "twgrodd/G1R-Deluxe_Gen1_mod_fork_new-game-plus-Roddsoftver",
-      "version": "1.0.13",
-      "sha256": "6560ad977edbca1aa44c2fdda0d355ee83a14e8a6e2be63941c857fd9478ee62"
+      "version": "1.0.16",
+      "sha256": "967e3c812c4a88c7de7111b7315bb8d6f6a7d61d22893fae6c4212ab35c939d8"
     },
     {
       "id": "all_pokemon_catchable_roddsoft",
@@ -98,8 +98,8 @@
       "id": "trainer-rematch-roddsoft",
       "source": "github",
       "repo": "twgrodd/G1R-Deluxe_Gen1_mod_fork_trainer-Rematch-Roddsoftver",
-      "version": "0.5.24",
-      "sha256": "1583de8f77fadf24c9292687069a9bdb5f7ad2171798cfbb490c53f4235d8474"
+      "version": "0.5.25",
+      "sha256": "354c01a472e039fa59b10a4597055678f1c373634c61d202e4de3dd0d3790063"
     },
     {
       "id": "moves_manager",
@@ -150,8 +150,8 @@
       "id": "DRAMATIC_SHAPE",
       "source": "github",
       "repo": "scottcandy34/DramaticShapeVoxelMod-latest",
-      "version": "1.9.0",
-      "sha256": "3d997c9ec87e4543df3ba6a07c29c05e6dd95cbaf613558ffee21012adac0635",
+      "version": "1.9.2",
+      "sha256": "aeec48db27778dc30edc9df5b77585f0651469f53c772e3cac9906d4dc5c98e9",
       "options": {
         "shinyOdds": 128,
         "water": "off",
