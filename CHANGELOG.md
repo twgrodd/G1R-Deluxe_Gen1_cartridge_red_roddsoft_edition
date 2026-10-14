@@ -163,3 +163,12 @@ Release dates and published-version state above are based on the repository's Gi
 - Updated **Modern Bag Roddsoft** 1.6.6 → **1.6.13**, adopting the new manifest ID `modern_bag_roddsoft` and preserving `opening_pocket: last`.
 - Updated the cartridge's `load_order` to match all five renamed IDs; kept the other 12 mod pins and existing curated options unchanged.
 
+## v0.2.19 (2026-10-14)
+
+- Updated **Quality of Life** 1.2.7 → **1.3.0**. Its manifest explicitly supports `gen1` and `gen2`; release notes describe beta Gold support while retaining Gen 1 behavior.
+- Updated **New Game Plus Roddsoft** 1.0.13 → **1.0.16**, including NG+ challenge-menu cleanup.
+- Updated **Trainer Rematch RoddSoft** 0.5.24 → **0.5.25**, fixing erroneous rematch prompts for non-trainer NPCs. The release workflow normalizes the ZIP's manifest version to 0.5.25, although the tagged source manifest still reports 0.5.22.
+- Updated **Dramatic Shape** 1.9.0 → **1.9.2**, restoring frosted battle-HUD panels on iOS. Its tagged source manifest still reports 1.9.0; the release ZIP's internal version is validated by the strict cartridge release pipeline.
+- Updated **Exp Share** repository reference from `ShaneMcGovernIE/exp_share` to its relocated home `Nexhas28/exp_share` (version 0.1.10 and SHA-256 unchanged).
+- Preserved all 17 mod IDs, load order, curated mod options, cartridge shell, label, and intended external display preferences.
+
