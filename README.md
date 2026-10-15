@@ -1,6 +1,8 @@
 # G1R Deluxe — Gen 1 Cartridge: Red / Roddsoft Edition
 
-![G1R Deluxe — Roddsoft Edition cartridge label](label.png)
+<p align="center">
+  <img src="label.png" alt="G1R Deluxe Pokémon Red — Roddsoft Edition cartridge label" width="420">
+</p>
 
 Roddans dream-version of Pokemon Red.
 Basically adding Quality of life improvements from newer games to the classic without removing the essence of the game.
