@@ -172,3 +172,11 @@ Release dates and published-version state above are based on the repository's Gi
 - Updated **Exp Share** repository reference from `ShaneMcGovernIE/exp_share` to its relocated home `Nexhas28/exp_share` (version 0.1.10 and SHA-256 unchanged).
 - Preserved all 17 mod IDs, load order, curated mod options, cartridge shell, label, and intended external display preferences.
 
+## v1.0.0 (2026-10-15) — Official Release
+
+- Promoted the curated **G1R Deluxe — Roddsoft Edition** Pokémon Red cartridge from v0.2.19 to its first official **v1.0.0** release.
+- Changed the **Exp Share** CUSTOM default percentage from **10% to 20%** (`expSharePercent: 20`), retaining CUSTOM mode, Percent Slot All, and Single EXP Share All.
+- Retained all **17 mods** at their previously validated pinned versions, their IDs and load order, all other mod options, and the sealed-cartridge format.
+- Preserved the custom cartridge label, dark-red shell, holo finish, and documented Gen1Recomp display preferences (Voxel 0, TiltShift off; external engine settings).
+- Official release denotes a validated and packaged cartridge; comprehensive in-game regression testing is not implied.
+
