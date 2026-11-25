@@ -2,7 +2,7 @@
   "schema": 1,
   "id": "g1r-deluxe-red-roddsoft",
   "title": "G1R Deluxe - Roddsoft Edition",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Roddsoft",
   "repo": "twgrodd/G1R-Deluxe_Gen1_cartridge_red_roddsoft_edition",
   "summary": "Deluxe Pokemon Red cartridge with the Roddsoft mod collection.",
@@ -31,8 +31,8 @@
       "id": "running_shoes",
       "source": "github",
       "repo": "MadeinTaly/gen1recomp-running-shoes",
-      "version": "1.10.0",
-      "sha256": "d4a52154f9d6b9c81c2d7421b694beda79bd66ef45471d2b7064739a9f6ed37b",
+      "version": "1.11.1",
+      "sha256": "33a2c21c5bda1f7a1ea46d209632c39a204cd6d1a4ea6cbfc1ea40178a06e61c",
       "options": {
         "speed": "1.5",
         "fx": "off"
@@ -71,8 +71,8 @@
       "id": "exp_share",
       "source": "github",
       "repo": "Nexhas28/exp_share",
-      "version": "0.1.10",
-      "sha256": "7a22e8d143b27b857773db350d969f3f5b31f0e2c813cd82d4181ef2c3d85f86",
+      "version": "0.1.11",
+      "sha256": "b098c533021fbd1bb7c900dc96f38db2ca5ee7f725e388678814f9e907341893",
       "options": {
         "expShare": "custom",
         "expSharePercentSlot": "all",
