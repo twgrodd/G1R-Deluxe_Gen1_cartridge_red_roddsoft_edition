@@ -9,7 +9,7 @@ Basically adding Quality of life improvements from newer games to the classic wi
 
 ## Status
 
-**Current cartridge: v1.0.0 — Official Release** — sealed and published, targeting Gen1Recomp `>=0.1.38`.
+**Current cartridge: v1.0.1 — Official Release** — sealed and published, targeting Gen1Recomp `>=0.1.38`.
 
 The cartridge uses a dark-red `#8b1624` shell, holo finish, and the custom Roddsoft label.
 
@@ -35,9 +35,9 @@ The cartridge uses a dark-red `#8b1624` shell, holo finish, and the custom Rodds
 
 ## Curated defaults
 
-- **Running Shoes:** speed 1.5; FX off.
+- **Running Shoes 1.11.1:** speed 1.5; FX off.
 - **Quality of Life:** EXP bar on; location banners 2; Easy Interactions on; Water Interaction Surf First; Repel Prompt on; Pokédex Indicator ON (Gen2).
-- **Exp Share:** Custom; Percent Slot All; Percent 20%; Single EXP Share All.
+- **Exp Share 0.1.11:** Custom; Percent Slot All; Percent 20%; Single EXP Share All.
 - **Modern Bag Roddsoft:** opening pocket last.
 - **Dramatic Shape:** shiny odds 128; water off; battle back off; shadows off.
 
