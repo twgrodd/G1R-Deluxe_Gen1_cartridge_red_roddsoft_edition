@@ -180,3 +180,9 @@ Release dates and published-version state above are based on the repository's Gi
 - Preserved the custom cartridge label, dark-red shell, holo finish, and documented Gen1Recomp display preferences (Voxel 0, TiltShift off; external engine settings).
 - Official release denotes a validated and packaged cartridge; comprehensive in-game regression testing is not implied.
 
+## v1.0.1 (2026-11-25) — Official Release Update
+
+- Updated **Running Shoes** 1.10.0 → **1.11.1**. Manifest ID remains `running_shoes`; preserved speed `1.5` and FX `off` options.
+- Updated **Exp Share** 0.1.10 → **0.1.11**. Manifest ID remains `exp_share`; preserved CUSTOM mode, all-party percentage slot, **20%** percentage, and single shared-EXP message setting.
+- Updated both release asset SHA-256 pins and retained all other mods, load order, settings, label, and sealed cartridge configuration.
+
